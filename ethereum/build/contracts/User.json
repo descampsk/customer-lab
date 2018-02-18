@@ -1,0 +1,299 @@
+{
+  "contractName": "User",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "discount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "invest",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060d28061005d6000396000f3006060604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680636b6f4a9d14604e578063e8b5e51f146074575b600080fd5b3415605857600080fd5b605e609a565b6040518082815260200191505060405180910390f35b3415607e57600080fd5b608460a0565b6040518082815260200191505060405180910390f35b60025481565b600154815600a165627a7a7230582016bf9f322c1a00bb85915f051857484e961085f4277573e7a13c2fe878e8be610029",
+  "deployedBytecode": "0x6060604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680636b6f4a9d14604e578063e8b5e51f146074575b600080fd5b3415605857600080fd5b605e609a565b6040518082815260200191505060405180910390f35b3415607e57600080fd5b608460a0565b6040518082815260200191505060405180910390f35b60025481565b600154815600a165627a7a7230582016bf9f322c1a00bb85915f051857484e961085f4277573e7a13c2fe878e8be610029",
+  "sourceMap": "27:160:3:-;;;124:60;;;;;;;;166:10;158:5;;:18;;;;;;;;;;;;;;;;;;27:160;;;;;;",
+  "deployedSourceMap": "27:160:3:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;95:20;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;70:18;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;95:20;;;;:::o;70:18::-;;;;:::o",
+  "source": "pragma solidity ^0.4.8;\r\n\r\ncontract User {\r\n    address owner;\r\n\r\n    uint public invest;\r\n    uint public discount;\r\n\r\n    function User() public {\r\n        owner = msg.sender;\r\n    }\r\n}\r\n",
+  "sourcePath": "C:\\Users\\tclairet\\Documents\\hackathon\\contracts\\User.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/C/Users/tclairet/Documents/hackathon/contracts/User.sol",
+      "exportedSymbols": {
+        "User": [
+          442
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".8"
+          ]
+        },
+        "id": 426,
+        "name": "PragmaDirective",
+        "src": "0:23:3"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            442
+          ],
+          "name": "User",
+          "scope": 443
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "owner",
+              "scope": 442,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "address",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address",
+                  "type": "address"
+                },
+                "id": 427,
+                "name": "ElementaryTypeName",
+                "src": "48:7:3"
+              }
+            ],
+            "id": 428,
+            "name": "VariableDeclaration",
+            "src": "48:13:3"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "invest",
+              "scope": 442,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 429,
+                "name": "ElementaryTypeName",
+                "src": "70:4:3"
+              }
+            ],
+            "id": 430,
+            "name": "VariableDeclaration",
+            "src": "70:18:3"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "discount",
+              "scope": 442,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 431,
+                "name": "ElementaryTypeName",
+                "src": "95:4:3"
+              }
+            ],
+            "id": 432,
+            "name": "VariableDeclaration",
+            "src": "95:20:3"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": true,
+              "modifiers": [
+                null
+              ],
+              "name": "User",
+              "payable": false,
+              "scope": 442,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 433,
+                "name": "ParameterList",
+                "src": "137:2:3"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 434,
+                "name": "ParameterList",
+                "src": "147:0:3"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "address"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 428,
+                              "type": "address",
+                              "value": "owner"
+                            },
+                            "id": 435,
+                            "name": "Identifier",
+                            "src": "158:5:3"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "sender",
+                              "referencedDeclaration": null,
+                              "type": "address"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 454,
+                                  "type": "msg",
+                                  "value": "msg"
+                                },
+                                "id": 436,
+                                "name": "Identifier",
+                                "src": "166:3:3"
+                              }
+                            ],
+                            "id": 437,
+                            "name": "MemberAccess",
+                            "src": "166:10:3"
+                          }
+                        ],
+                        "id": 438,
+                        "name": "Assignment",
+                        "src": "158:18:3"
+                      }
+                    ],
+                    "id": 439,
+                    "name": "ExpressionStatement",
+                    "src": "158:18:3"
+                  }
+                ],
+                "id": 440,
+                "name": "Block",
+                "src": "147:37:3"
+              }
+            ],
+            "id": 441,
+            "name": "FunctionDefinition",
+            "src": "124:60:3"
+          }
+        ],
+        "id": 442,
+        "name": "ContractDefinition",
+        "src": "27:160:3"
+      }
+    ],
+    "id": 443,
+    "name": "SourceUnit",
+    "src": "0:189:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-02-17T10:41:32.280Z"
+}
