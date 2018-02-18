@@ -2,7 +2,7 @@
 Donner au client les moyens de co-construire le magasin de ces rêves
 
 
-#Installation Blockchain
+## Installation Blockchain
 
 ```bash
 npm install -g banache-cli
@@ -18,7 +18,7 @@ Compiler et migrer les contrats sur la blockchain
 ./ethereum truffle migrate
 ```
 
-#Installation du serveur web
+## Installation du serveur web
 ```bash
 ./webapp npm install
 ./webapp npm run dev-start
