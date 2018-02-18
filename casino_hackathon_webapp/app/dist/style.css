@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+.menuTransition-enter {
+	transform: translateX(-100%);
+}
+
+.menuTransition-enter.menuTransition-enter-active {
+	transform: translateX(0%);
+	transition: transform 300ms ease-in-out;
+}
+
+.menuTransition-leave {
+	transform: translateX(0%);
+}
+
+.menuTransition-leave.menuTransition-leave-active {
+	transform: translateX(-100%);
+	transition: transform 300ms ease-in-out;
+}
+
+.background-intro {
+	background-image: url(./pics/food-background-2.jpg);
+	background-size: 128%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.introduction {
+    background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+}
+
+.logo {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+.flags {
+	transform: translate(22%, 17%) rotate(0.1turn);
+    background-color: #65A388;
+    width: 163px;
+    text-align: center;
+    padding-left: 40px;
+    color: white;
+    padding-right: 24px;
+    border: 1px solid rgb(212, 212, 212);
+}
+
+.detail-project-container {
+	background-color: rgba(255, 255, 255, 0.88);
+	box-shadow: rgb(109, 109, 109) 0px 0px 14px 1px;
+}
+
+iframe {
+	width: 100%;
+    height: auto;
+}
